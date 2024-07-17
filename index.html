@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web project</title>
+    <link rel="shortcut icon" href="NEWS3.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="navbox container flex" >
+                <div class="logo">
+                 <a href="#" class="company-logo">
+                    <img src="NEWS3.png" alt=""></a>
+                </div>
+                <div class="nav-link"><ul class="uol flex">
+                    <li class="hover-link nav-item" onclick="reload()">HOME</li>
+                <li class="hover-link nav-item" id="sports" onclick="onNavitem('sports')">SPORTS</li>
+                <li class="hover-link nav-item" id="finance" onclick="onNavitem('finance')">FINANCE</li>
+                <li class="hover-link nav-item" id="politics" onclick="onNavitem('politics')">POLITICS</li>
+            </ul>
+        </div>
+        <div class="search-bar flex">
+            <input type="text" id="search" placeholder="e.g-sports">
+            <button id="searchbutton" class="search-button">Search</button>
+        </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="card-container container flex" id="card-container">
+                
+            </div>
+            
+        </main>
+        <template id="template-news-card">
+            <div class="card">
+                <div class="card-header">
+                    <img src="https:via.placeholder.com/400x200" alt="news-image" id="news">
+                </div>
+                <div class="card-content">
+                    <h3 id="title">this is the title</h3>
+                    <h6 class="news-source" id="news-source">end gaget</h6>
+                    <p class="news-des" id="news-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam et iure, aliquid dignissimos dolores velit molestiae vero unde dicta rerum aperiam sapiente.</p>
+                </div>
+            </div>
+        </div>
+        </template>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
